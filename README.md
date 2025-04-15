@@ -44,7 +44,7 @@ The application was deployed as a static website using **GitHub Pages**. Here's 
 ### 4. **Access the Live Site**
    - After enabling GitHub Pages, the live site was accessible at:
      ```
-     https://your-username.github.io/quiz-app/
+     https://lokesh-matha.github.io/static-website-github/
      ```
 
 ### 5. **Updating the Site**
