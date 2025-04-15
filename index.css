@@ -1,25 +1,107 @@
+/* General Body Styling */
 body {
-  background-color: #f8f9fa;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
+/* Quiz Container Styling */
 #quiz-container {
   background: #ffffff;
-  border-radius: 10px;
-  padding: 40px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 50px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
+#quiz-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Question Styling */
 #question {
-  font-size: 24px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #5d5d8b;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
+/* Options Buttons Styling */
 #options .btn-option {
   display: block;
   width: 100%;
-  margin: 10px 0;
-  padding: 10px;
+  padding: 15px;
+  margin: 15px 0;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  border-radius: 25px;
+  background: #7f83ff;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
 }
 
+#options .btn-option:hover {
+  background: #5867ff;
+  transform: scale(1.05);
+}
+
+#options .btn-option:active {
+  background: #4a57e8;
+  transform: scale(1);
+}
+
+/* Next Button Styling */
 #next-button {
   margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  background: #ff7eb3;
+  cursor: pointer;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+#next-button:hover {
+  background: #ff5d99;
+  box-shadow: 0px 5px 15px rgba(255, 93, 153, 0.4);
+}
+
+#next-button:active {
+  background: #e64b89;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #quiz-container {
+    padding: 30px;
+  }
+
+  #question {
+    font-size: 24px;
+  }
+
+  #options .btn-option {
+    font-size: 16px;
+  }
+
+  #next-button {
+    font-size: 16px;
+    padding: 8px 25px;
+  }
 }
